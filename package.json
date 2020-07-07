@@ -1,7 +1,7 @@
 {
   "name": "import-cartographer",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.0-dev",
+  "description": "Explore the ESM import tree of a file",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -14,10 +14,8 @@
   "keywords": [],
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (https://www.mikealrogers.com/)",
   "license": "(Apache-2.0 AND MIT)",
-  "dependencies": {
-    "acorn": "^7.3.1"
-  },
   "devDependencies": {
+    "acorn": "^7.3.1",
     "hundreds": "0.0.7",
     "mocha": "^8.0.1",
     "standard": "^14.3.4"
