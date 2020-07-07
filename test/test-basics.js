@@ -23,7 +23,7 @@ test('base fixture', async () => {
     { key: 'blah', value: 2 },
     {
       key: './sub.js',
-      value: '/root/import-cartographer/test/fixture/sub.js'
+      value: join(__dirname, 'fixture', 'sub.js')
     },
     { key: 'blah', value: 2 }
   ]
