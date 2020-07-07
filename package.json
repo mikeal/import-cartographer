@@ -5,12 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test:node": "mocha test/test-*.js",
+    "test:v12": "npm run test:node",
+    "test": "hundreds mocha test/test-*.js"
   },
   "keywords": [],
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (https://www.mikealrogers.com/)",
   "license": "(Apache-2.0 AND MIT)",
   "dependencies": {
     "acorn": "^7.3.1"
+  },
+  "devDependencies": {
+    "hundreds": "0.0.7",
+    "mocha": "^8.0.1",
+    "standard": "^14.3.4"
   }
 }
