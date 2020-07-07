@@ -27,7 +27,8 @@ jobs:
       run: npm test
     - name: Test
       if: ${{ matrix.node-version == '12.x' }}
-      run: npm run test:v12
+      run: npm run $(node -e "console.log(require('./package.json').scripts['test:v12'] ? 'test:v1
+      2' : 'test')") 
   publish:
     name: Publish
     needs: test
